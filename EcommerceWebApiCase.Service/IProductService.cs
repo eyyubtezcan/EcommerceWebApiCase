@@ -1,0 +1,16 @@
+﻿using EcommerceWebApiCase.Data.Entities;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EcommerceWebApiCase.Service
+{
+    public interface IProductService:IService<Product>
+    {
+        public List<Product> GetAllProducts();
+    }
+}

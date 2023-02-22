@@ -1,9 +1,13 @@
 ﻿using EcommerceWebApiCase.Data.Entities;
+using EcommerceWebApiCase.Models;
+using EcommerceWebApiCase.Models.FilterModel;
 using EcommerceWebApiCase.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EcommerceWebApiCase.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProductController : Controller
     {
         private IProductService _service;
@@ -12,11 +16,20 @@ namespace EcommerceWebApiCase.API.Controllers
             _service = service;
         }
 
-        [HttpPost("Stock")]
-        public async Task<IEnumerable<Product>> GetCustomersVariantCodeStock(List<Product> stockList)
+        [HttpGet("Products")]
+        public async Task<IEnumerable<Product>> GetProducts()
         {
            
             var result =  _service.GetAllProducts();
+
+            return result;
+
+        }
+        [HttpPost("Products2")]
+        public async Task<IEnumerable<ProductModel>> GetProducts(ProductFilterModel model)
+        {
+
+            var result = _service.GetAllProductsFilter(model);
 
             return result;
 

@@ -7,16 +7,27 @@
         public string Description { get; set; }
         public decimal Price { get; set; }
         public string ImageUrl { get; set; }
-        public string Length { get; set; }
-        public string Manufacturer { get; set; }
-        public string ModelNumber { get; set; }
-        public string Brand { get; set; }
-        public string PartNumber { get; set; }       
-        public string OperatingSystem { get; set; }
-        public string Processor { get; set; }
-        public int Ram { get; set; }
-        public int Storage { get; set; }
-        public int BatteryCapacity { get; set; }      
-        public string Display { get; set; }
+        public int LanguageId { get; set; }
+        public List<ProductTranslationModel> ProductTranslation { get; set; }
+        public List<ProductCategoryModel> ProductCategory { get; set; }
+
+    }
+
+    public class ProductTranslationModel
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int LanguageId { get; set; } // Will inserting new data for Every languge
+        public int ProductMainId { get; set; }
+
+    }
+    public class ProductCategoryModel 
+    {
+
+        // Foreign key for Parent Category
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int LanguageId { get; set; }
     }
 }
+

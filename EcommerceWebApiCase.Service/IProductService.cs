@@ -1,4 +1,6 @@
 ﻿using EcommerceWebApiCase.Data.Entities;
+using EcommerceWebApiCase.Models;
+using EcommerceWebApiCase.Models.FilterModel;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,5 +14,6 @@ namespace EcommerceWebApiCase.Service
     public interface IProductService:IService<Product>
     {
         public List<Product> GetAllProducts();
+        public List<ProductModel> GetAllProductsFilter(ProductFilterModel model);
     }
 }

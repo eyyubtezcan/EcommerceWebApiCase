@@ -23,6 +23,13 @@ builder.Services.AddDbContext<EcommerceDbContext>(options =>
 
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 
+
+#region Services
+builder.Services.AddScoped<IProductService, ProductService>();
+
+#endregion
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

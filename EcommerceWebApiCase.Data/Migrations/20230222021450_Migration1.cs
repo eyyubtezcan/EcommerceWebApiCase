@@ -213,7 +213,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         column: x => x.ProductId,
                         principalTable: "Products",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
@@ -221,8 +221,8 @@ namespace EcommerceWebApiCase.Data.Migrations
                 columns: new[] { "Id", "Code", "CreatedDate", "Description", "IsActive", "Name", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, "tr", new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1575), "Türkçe", true, "Türkçe", new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1572) },
-                    { 2, "en", new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1577), "İngilizce", true, "İngilizce", new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1577) }
+                    { 1, "tr", new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9281), "Türkçe", true, "Türkçe", new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9278) },
+                    { 2, "en", new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9283), "İngilizce", true, "İngilizce", new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9283) }
                 });
 
             migrationBuilder.InsertData(
@@ -230,8 +230,8 @@ namespace EcommerceWebApiCase.Data.Migrations
                 columns: new[] { "Id", "CreatedDate", "IsActive", "ParentCategoryId", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1744), true, null, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1744) },
-                    { 2, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1747), true, null, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1747) }
+                    { 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9450), true, null, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9450) },
+                    { 2, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9459), true, null, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9458) }
                 });
 
             migrationBuilder.InsertData(
@@ -239,24 +239,24 @@ namespace EcommerceWebApiCase.Data.Migrations
                 columns: new[] { "Id", "CreatedDate", "Description", "IsActive", "Name", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2064), "Çoktan Seçmeli", true, "Lookup", new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2063) },
-                    { 2, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2066), "Var veya Yok", true, "CheckBox", new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2066) }
+                    { 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9766), "Çoktan Seçmeli", true, "Lookup", new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9765) },
+                    { 2, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9768), "Var veya Yok", true, "CheckBox", new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9767) }
                 });
 
             migrationBuilder.InsertData(
                 table: "ProductCategories",
                 columns: new[] { "Id", "CreatedDate", "IsActive", "ParentCategoryId", "UpdatedDate" },
-                values: new object[] { 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1749), true, 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1749) });
+                values: new object[] { 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9461), true, 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9460) });
 
             migrationBuilder.InsertData(
                 table: "ProductCategoryTranslations",
                 columns: new[] { "Id", "CreatedDate", "Description", "IsActive", "LanguageId", "Name", "ProductCategoryMainId", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1809), "Elektronik ürünler bu kategoride bulunmaktadır", true, 1, "Elektronik", 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1810) },
-                    { 2, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1811), "Electronic products are in this category", true, 2, "Electronics", 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1812) },
-                    { 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1813), "Tabletler bu kategoride bulunmaktadır", true, 1, "Tabletler", 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1814) },
-                    { 4, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1822), "Tablets are in this category", true, 2, "Tablets", 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1823) }
+                    { 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9521), "Elektronik ürünler bu kategoride bulunmaktadır", true, 1, "Elektronik", 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9522) },
+                    { 2, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9523), "Electronic products are in this category", true, 2, "Electronics", 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9524) },
+                    { 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9526), "Tabletler bu kategoride bulunmaktadır", true, 1, "Tabletler", 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9526) },
+                    { 4, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9528), "Tablets are in this category", true, 2, "Tablets", 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9528) }
                 });
 
             migrationBuilder.InsertData(
@@ -264,28 +264,28 @@ namespace EcommerceWebApiCase.Data.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Description", "IsActive", "Name", "ProductFeatureTypeId", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2008), "Ekran Boyutu (İnç Cinsinden)", true, "Ekran Boyutu", 1, null },
-                    { 2, 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2010), "İşlemci Hızı", true, "İşlemci Hızı", 1, null },
-                    { 3, 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2011), "Renk", true, "Renk", 1, null },
-                    { 4, 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2013), "Pil Kapasitesi", true, "Pil Kapasitesi", 1, null }
+                    { 1, 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9699), "Ekran Boyutu (İnç Cinsinden)", true, "Ekran Boyutu", 1, null },
+                    { 2, 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9700), "İşlemci Hızı", true, "İşlemci Hızı", 1, null },
+                    { 3, 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9702), "Renk", true, "Renk", 1, null },
+                    { 4, 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9703), "Pil Kapasitesi", true, "Pil Kapasitesi", 1, null }
                 });
 
             migrationBuilder.InsertData(
                 table: "Products",
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "ImageUrl", "IsActive", "Price", "UpdatedDate" },
-                values: new object[] { 1, 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1886), "img/product/product.jpg", true, 500m, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1886) });
+                values: new object[] { 1, 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9583), "img/product/product.jpg", true, 500m, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9583) });
 
             migrationBuilder.InsertData(
                 table: "ProductFeatureProducts",
                 columns: new[] { "Id", "CreatedDate", "IsActive", "ProductFeatureId", "ProductId", "UpdatedDate", "Value" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2133), true, 1, 1, null, "7 inç" },
-                    { 2, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2135), true, 1, 1, null, "8 inç" },
-                    { 3, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2136), true, 1, 1, null, "10 inç" },
-                    { 4, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2138), true, 3, 1, null, "Siyah" },
-                    { 5, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2139), true, 3, 1, null, "Beyaz" },
-                    { 6, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2141), true, 3, 1, null, "Gümüş" }
+                    { 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9828), true, 1, 1, null, "7 inç" },
+                    { 2, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9830), true, 1, 1, null, "8 inç" },
+                    { 3, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9831), true, 1, 1, null, "10 inç" },
+                    { 4, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9833), true, 3, 1, null, "Siyah" },
+                    { 5, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9834), true, 3, 1, null, "Beyaz" },
+                    { 6, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9836), true, 3, 1, null, "Gümüş" }
                 });
 
             migrationBuilder.InsertData(
@@ -293,8 +293,8 @@ namespace EcommerceWebApiCase.Data.Migrations
                 columns: new[] { "Id", "CreatedDate", "Description", "IsActive", "LanguageId", "Name", "ProductMainId", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1945), "Samsung Tablet 16 Gb ......", true, 1, "Samsung Tablet", 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1946) },
-                    { 2, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1948), "Eng Samsung Tablet 16 Gb ......", true, 2, "Samsung Tablet Eng", 1, new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1948) }
+                    { 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9636), "Samsung Tablet 16 Gb ......", true, 1, "Samsung Tablet", 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9637) },
+                    { 2, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9639), "Eng Samsung Tablet 16 Gb ......", true, 2, "Samsung Tablet Eng", 1, new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9639) }
                 });
 
             migrationBuilder.CreateIndex(

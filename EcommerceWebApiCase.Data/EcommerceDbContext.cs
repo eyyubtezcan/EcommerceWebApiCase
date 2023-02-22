@@ -16,7 +16,7 @@ namespace EcommerceWebApiCase.Data
         {
         }
 
-        //public EcommerceDbContext(DbContextOptions<EcommerceDbContext> options) : base(options) { }
+        public EcommerceDbContext(DbContextOptions<EcommerceDbContext> options) : base(options) { }
 
         public DbSet<Language> Languages { get; set; }
         public DbSet<Product> Products { get; set; }
@@ -51,6 +51,12 @@ namespace EcommerceWebApiCase.Data
             modelBuilder.ApplyConfiguration(new ProductFeatureSeed(new int[] { 1, 2,3,4 }));
             modelBuilder.ApplyConfiguration(new ProductFeatureTypeSeed(new int[] { 1, 2 }));
             modelBuilder.ApplyConfiguration(new ProductFeatureProductSeed(new int[] { 1, 2,3,4,5,6 }));
+
+            modelBuilder.Entity<ProductFeatureProduct>()
+               .HasOne(pf => pf.Product)
+               .WithMany(p => p.ProductFeatureProducts)
+               .HasForeignKey(pf => pf.ProductId)
+               .OnDelete(DeleteBehavior.Restrict);
 
 
 

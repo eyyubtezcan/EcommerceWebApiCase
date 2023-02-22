@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EcommerceWebApiCase.Data.Migrations
 {
     [DbContext(typeof(EcommerceDbContext))]
-    [Migration("20230222020528_Migration1")]
+    [Migration("20230222021450_Migration1")]
     partial class Migration1
     {
         /// <inheritdoc />
@@ -63,21 +63,21 @@ namespace EcommerceWebApiCase.Data.Migrations
                         {
                             Id = 1,
                             Code = "tr",
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1575),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9281),
                             Description = "Türkçe",
                             IsActive = true,
                             Name = "Türkçe",
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1572)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9278)
                         },
                         new
                         {
                             Id = 2,
                             Code = "en",
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1577),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9283),
                             Description = "İngilizce",
                             IsActive = true,
                             Name = "İngilizce",
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1577)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9283)
                         });
                 });
 
@@ -119,11 +119,11 @@ namespace EcommerceWebApiCase.Data.Migrations
                         {
                             Id = 1,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1886),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9583),
                             ImageUrl = "img/product/product.jpg",
                             IsActive = true,
                             Price = 500m,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1886)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9583)
                         });
                 });
 
@@ -157,24 +157,24 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1744),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9450),
                             IsActive = true,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1744)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9450)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1747),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9459),
                             IsActive = true,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1747)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9458)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1749),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9461),
                             IsActive = true,
                             ParentCategoryId = 1,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1749)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9460)
                         });
                 });
 
@@ -221,46 +221,46 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1809),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9521),
                             Description = "Elektronik ürünler bu kategoride bulunmaktadır",
                             IsActive = true,
                             LanguageId = 1,
                             Name = "Elektronik",
                             ProductCategoryMainId = 1,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1810)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9522)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1811),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9523),
                             Description = "Electronic products are in this category",
                             IsActive = true,
                             LanguageId = 2,
                             Name = "Electronics",
                             ProductCategoryMainId = 1,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1812)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9524)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1813),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9526),
                             Description = "Tabletler bu kategoride bulunmaktadır",
                             IsActive = true,
                             LanguageId = 1,
                             Name = "Tabletler",
                             ProductCategoryMainId = 3,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1814)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9526)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1822),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9528),
                             Description = "Tablets are in this category",
                             IsActive = true,
                             LanguageId = 2,
                             Name = "Tablets",
                             ProductCategoryMainId = 3,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1823)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9528)
                         });
                 });
 
@@ -308,7 +308,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         {
                             Id = 1,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2008),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9699),
                             Description = "Ekran Boyutu (İnç Cinsinden)",
                             IsActive = true,
                             Name = "Ekran Boyutu",
@@ -318,7 +318,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2010),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9700),
                             Description = "İşlemci Hızı",
                             IsActive = true,
                             Name = "İşlemci Hızı",
@@ -328,7 +328,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         {
                             Id = 3,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2011),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9702),
                             Description = "Renk",
                             IsActive = true,
                             Name = "Renk",
@@ -338,7 +338,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         {
                             Id = 4,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2013),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9703),
                             Description = "Pil Kapasitesi",
                             IsActive = true,
                             Name = "Pil Kapasitesi",
@@ -385,7 +385,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2133),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9828),
                             IsActive = true,
                             ProductFeatureId = 1,
                             ProductId = 1,
@@ -394,7 +394,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2135),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9830),
                             IsActive = true,
                             ProductFeatureId = 1,
                             ProductId = 1,
@@ -403,7 +403,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2136),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9831),
                             IsActive = true,
                             ProductFeatureId = 1,
                             ProductId = 1,
@@ -412,7 +412,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2138),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9833),
                             IsActive = true,
                             ProductFeatureId = 3,
                             ProductId = 1,
@@ -421,7 +421,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2139),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9834),
                             IsActive = true,
                             ProductFeatureId = 3,
                             ProductId = 1,
@@ -430,7 +430,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2141),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9836),
                             IsActive = true,
                             ProductFeatureId = 3,
                             ProductId = 1,
@@ -471,20 +471,20 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2064),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9766),
                             Description = "Çoktan Seçmeli",
                             IsActive = true,
                             Name = "Lookup",
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2063)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9765)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2066),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9768),
                             Description = "Var veya Yok",
                             IsActive = true,
                             Name = "CheckBox",
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(2066)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9767)
                         });
                 });
 
@@ -531,24 +531,24 @@ namespace EcommerceWebApiCase.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1945),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9636),
                             Description = "Samsung Tablet 16 Gb ......",
                             IsActive = true,
                             LanguageId = 1,
                             Name = "Samsung Tablet",
                             ProductMainId = 1,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1946)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9637)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1948),
+                            CreatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9639),
                             Description = "Eng Samsung Tablet 16 Gb ......",
                             IsActive = true,
                             LanguageId = 2,
                             Name = "Samsung Tablet Eng",
                             ProductMainId = 1,
-                            UpdatedDate = new DateTime(2023, 2, 22, 5, 5, 28, 320, DateTimeKind.Local).AddTicks(1948)
+                            UpdatedDate = new DateTime(2023, 2, 22, 5, 14, 50, 344, DateTimeKind.Local).AddTicks(9639)
                         });
                 });
 
@@ -621,7 +621,7 @@ namespace EcommerceWebApiCase.Data.Migrations
                     b.HasOne("EcommerceWebApiCase.Data.Entities.Product", "Product")
                         .WithMany("ProductFeatureProducts")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Product");
